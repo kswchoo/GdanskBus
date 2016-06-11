@@ -15,6 +15,7 @@
 		FE6E9B5B1D0CAD730092AC01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6E9B591D0CAD730092AC01 /* LaunchScreen.storyboard */; };
 		FE6E9B661D0CAD730092AC01 /* GdanskBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E9B651D0CAD730092AC01 /* GdanskBusTests.swift */; };
 		FE6E9B711D0CAD730092AC01 /* GdanskBusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E9B701D0CAD730092AC01 /* GdanskBusUITests.swift */; };
+		FE6E9B7F1D0CB8640092AC01 /* ArrivalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E9B7E1D0CB8640092AC01 /* ArrivalInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		FE6E9B6C1D0CAD730092AC01 /* GdanskBusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GdanskBusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6E9B701D0CAD730092AC01 /* GdanskBusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GdanskBusUITests.swift; sourceTree = "<group>"; };
 		FE6E9B721D0CAD730092AC01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE6E9B7E1D0CB8640092AC01 /* ArrivalInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrivalInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			children = (
 				FE6E9B4E1D0CAD730092AC01 /* AppDelegate.swift */,
 				FE6E9B501D0CAD730092AC01 /* StopsViewController.swift */,
+				FE6E9B7E1D0CB8640092AC01 /* ArrivalInfoViewController.swift */,
 				FE6E9B541D0CAD730092AC01 /* Main.storyboard */,
 				FE6E9B571D0CAD730092AC01 /* Assets.xcassets */,
 				FE6E9B591D0CAD730092AC01 /* LaunchScreen.storyboard */,
@@ -333,6 +336,7 @@
 			files = (
 				FE6E9B4F1D0CAD730092AC01 /* AppDelegate.swift in Sources */,
 				FE6E9B511D0CAD730092AC01 /* StopsViewController.swift in Sources */,
+				FE6E9B7F1D0CB8640092AC01 /* ArrivalInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

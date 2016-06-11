@@ -68,6 +68,13 @@ class StopsViewController: UITableViewController {
         cell.setStop(stop)
         return cell
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let sender = sender as? StopCell,
+            let destVC = segue.destinationViewController as? ArrivalInfoViewController {
+            destVC.stop = sender.getStop()
+        }
+    }
 
 
 }
@@ -76,8 +83,14 @@ class StopCell: UITableViewCell {
     @IBOutlet weak var stopName: UILabel!
     @IBOutlet weak var stopCode: UILabel!
     
+    private var stop: Stop = Stop()
+    
     func setStop(stop: Stop) {
+        self.stop = stop
         stopName.text = stop.stopName
         stopCode.text = "\(stop.stopCode)"
+    }
+    func getStop() -> Stop {
+        return stop;
     }
 }

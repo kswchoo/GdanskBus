@@ -80,39 +80,52 @@
         <!--Chodowieckiego-->
         <scene sceneID="i4Y-PB-aVu">
             <objects>
-                <tableViewController id="jgy-21-CIH" sceneMemberID="viewController">
+                <tableViewController id="jgy-21-CIH" customClass="ArrivalInfoViewController" customModule="GdanskBus" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2C6-PL-p28">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="C8d-x8-sbe">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArrivalInfoCell" id="C8d-x8-sbe" customClass="ArrivalInfoCell" customModule="GdanskBus" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C8d-x8-sbe" id="2M5-qW-T43">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcV-ZN-TIC">
-                                            <rect key="frame" x="15" y="11" width="18" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcV-ZN-TIC" userLabel="LineNumber">
+                                            <rect key="frame" x="15" y="11" width="20" height="21"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" red="0.70662715517241381" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:53" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5U-Im-QWU" userLabel="ArrivesAt">
+                                            <rect key="frame" x="548" y="13" width="37" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Łostowice Świętokrzyska" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDj-KU-ing">
-                                            <rect key="frame" x="58" y="11" width="192" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10:53" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5U-Im-QWU">
-                                            <rect key="frame" x="533" y="11" width="44" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Łostowice Świętokrzyska" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDj-KU-ing" userLabel="Direction">
+                                            <rect key="frame" x="52" y="11" width="192" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="cDj-KU-ing" firstAttribute="leading" secondItem="AcV-ZN-TIC" secondAttribute="trailing" constant="19" id="1yp-qO-nmC"/>
+                                        <constraint firstItem="M5U-Im-QWU" firstAttribute="centerY" secondItem="2M5-qW-T43" secondAttribute="centerY" id="CPT-ky-oYw"/>
+                                        <constraint firstAttribute="trailing" secondItem="M5U-Im-QWU" secondAttribute="trailing" constant="15" id="CWn-Ah-WOI"/>
+                                        <constraint firstItem="AcV-ZN-TIC" firstAttribute="leading" secondItem="2M5-qW-T43" secondAttribute="leading" constant="15" id="KYD-EZ-WzA"/>
+                                        <constraint firstItem="AcV-ZN-TIC" firstAttribute="centerY" secondItem="2M5-qW-T43" secondAttribute="centerY" id="MrG-JF-p4i"/>
+                                        <constraint firstItem="cDj-KU-ing" firstAttribute="centerY" secondItem="2M5-qW-T43" secondAttribute="centerY" id="zyA-zU-TyT"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="arrivesAtLabel" destination="M5U-Im-QWU" id="tbn-Fc-Gew"/>
+                                    <outlet property="directionLabel" destination="cDj-KU-ing" id="5sL-fK-cln"/>
+                                    <outlet property="lineNumberLabel" destination="AcV-ZN-TIC" id="Wj9-yg-eAq"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -124,7 +137,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8cd-H0-fbu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2227" y="0.0"/>
+            <point key="canvasLocation" x="2229" y="0.0"/>
         </scene>
         <!--Stop-->
         <scene sceneID="BxK-0j-vrz">
