@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE6E9B4F1D0CAD730092AC01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E9B4E1D0CAD730092AC01 /* AppDelegate.swift */; };
+		FE6E9B511D0CAD730092AC01 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E9B501D0CAD730092AC01 /* FirstViewController.swift */; };
+		FE6E9B531D0CAD730092AC01 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E9B521D0CAD730092AC01 /* SecondViewController.swift */; };
+		FE6E9B561D0CAD730092AC01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6E9B541D0CAD730092AC01 /* Main.storyboard */; };
+		FE6E9B581D0CAD730092AC01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE6E9B571D0CAD730092AC01 /* Assets.xcassets */; };
+		FE6E9B5B1D0CAD730092AC01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6E9B591D0CAD730092AC01 /* LaunchScreen.storyboard */; };
+		FE6E9B661D0CAD730092AC01 /* GdanskBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E9B651D0CAD730092AC01 /* GdanskBusTests.swift */; };
+		FE6E9B711D0CAD730092AC01 /* GdanskBusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E9B701D0CAD730092AC01 /* GdanskBusUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE6E9B621D0CAD730092AC01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE6E9B431D0CAD730092AC01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE6E9B4A1D0CAD730092AC01;
+			remoteInfo = GdanskBus;
+		};
+		FE6E9B6D1D0CAD730092AC01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE6E9B431D0CAD730092AC01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE6E9B4A1D0CAD730092AC01;
+			remoteInfo = GdanskBus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FE6E9B4B1D0CAD730092AC01 /* GdanskBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GdanskBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE6E9B4E1D0CAD730092AC01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE6E9B501D0CAD730092AC01 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		FE6E9B521D0CAD730092AC01 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FE6E9B551D0CAD730092AC01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE6E9B571D0CAD730092AC01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE6E9B5A1D0CAD730092AC01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE6E9B5C1D0CAD730092AC01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE6E9B611D0CAD730092AC01 /* GdanskBusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GdanskBusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE6E9B651D0CAD730092AC01 /* GdanskBusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GdanskBusTests.swift; sourceTree = "<group>"; };
+		FE6E9B671D0CAD730092AC01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE6E9B6C1D0CAD730092AC01 /* GdanskBusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GdanskBusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE6E9B701D0CAD730092AC01 /* GdanskBusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GdanskBusUITests.swift; sourceTree = "<group>"; };
+		FE6E9B721D0CAD730092AC01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE6E9B481D0CAD730092AC01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE6E9B5E1D0CAD730092AC01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE6E9B691D0CAD730092AC01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE6E9B421D0CAD730092AC01 = {
+			isa = PBXGroup;
+			children = (
+				FE6E9B4D1D0CAD730092AC01 /* GdanskBus */,
+				FE6E9B641D0CAD730092AC01 /* GdanskBusTests */,
+				FE6E9B6F1D0CAD730092AC01 /* GdanskBusUITests */,
+				FE6E9B4C1D0CAD730092AC01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE6E9B4C1D0CAD730092AC01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE6E9B4B1D0CAD730092AC01 /* GdanskBus.app */,
+				FE6E9B611D0CAD730092AC01 /* GdanskBusTests.xctest */,
+				FE6E9B6C1D0CAD730092AC01 /* GdanskBusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE6E9B4D1D0CAD730092AC01 /* GdanskBus */ = {
+			isa = PBXGroup;
+			children = (
+				FE6E9B4E1D0CAD730092AC01 /* AppDelegate.swift */,
+				FE6E9B501D0CAD730092AC01 /* FirstViewController.swift */,
+				FE6E9B521D0CAD730092AC01 /* SecondViewController.swift */,
+				FE6E9B541D0CAD730092AC01 /* Main.storyboard */,
+				FE6E9B571D0CAD730092AC01 /* Assets.xcassets */,
+				FE6E9B591D0CAD730092AC01 /* LaunchScreen.storyboard */,
+				FE6E9B5C1D0CAD730092AC01 /* Info.plist */,
+			);
+			path = GdanskBus;
+			sourceTree = "<group>";
+		};
+		FE6E9B641D0CAD730092AC01 /* GdanskBusTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE6E9B651D0CAD730092AC01 /* GdanskBusTests.swift */,
+				FE6E9B671D0CAD730092AC01 /* Info.plist */,
+			);
+			path = GdanskBusTests;
+			sourceTree = "<group>";
+		};
+		FE6E9B6F1D0CAD730092AC01 /* GdanskBusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FE6E9B701D0CAD730092AC01 /* GdanskBusUITests.swift */,
+				FE6E9B721D0CAD730092AC01 /* Info.plist */,
+			);
+			path = GdanskBusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE6E9B4A1D0CAD730092AC01 /* GdanskBus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE6E9B751D0CAD730092AC01 /* Build configuration list for PBXNativeTarget "GdanskBus" */;
+			buildPhases = (
+				FE6E9B471D0CAD730092AC01 /* Sources */,
+				FE6E9B481D0CAD730092AC01 /* Frameworks */,
+				FE6E9B491D0CAD730092AC01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GdanskBus;
+			productName = GdanskBus;
+			productReference = FE6E9B4B1D0CAD730092AC01 /* GdanskBus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE6E9B601D0CAD730092AC01 /* GdanskBusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE6E9B781D0CAD730092AC01 /* Build configuration list for PBXNativeTarget "GdanskBusTests" */;
+			buildPhases = (
+				FE6E9B5D1D0CAD730092AC01 /* Sources */,
+				FE6E9B5E1D0CAD730092AC01 /* Frameworks */,
+				FE6E9B5F1D0CAD730092AC01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE6E9B631D0CAD730092AC01 /* PBXTargetDependency */,
+			);
+			name = GdanskBusTests;
+			productName = GdanskBusTests;
+			productReference = FE6E9B611D0CAD730092AC01 /* GdanskBusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE6E9B6B1D0CAD730092AC01 /* GdanskBusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE6E9B7B1D0CAD730092AC01 /* Build configuration list for PBXNativeTarget "GdanskBusUITests" */;
+			buildPhases = (
+				FE6E9B681D0CAD730092AC01 /* Sources */,
+				FE6E9B691D0CAD730092AC01 /* Frameworks */,
+				FE6E9B6A1D0CAD730092AC01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE6E9B6E1D0CAD730092AC01 /* PBXTargetDependency */,
+			);
+			name = GdanskBusUITests;
+			productName = GdanskBusUITests;
+			productReference = FE6E9B6C1D0CAD730092AC01 /* GdanskBusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE6E9B431D0CAD730092AC01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Kevin Studio";
+				TargetAttributes = {
+					FE6E9B4A1D0CAD730092AC01 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					FE6E9B601D0CAD730092AC01 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = FE6E9B4A1D0CAD730092AC01;
+					};
+					FE6E9B6B1D0CAD730092AC01 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = FE6E9B4A1D0CAD730092AC01;
+					};
+				};
+			};
+			buildConfigurationList = FE6E9B461D0CAD730092AC01 /* Build configuration list for PBXProject "GdanskBus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE6E9B421D0CAD730092AC01;
+			productRefGroup = FE6E9B4C1D0CAD730092AC01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE6E9B4A1D0CAD730092AC01 /* GdanskBus */,
+				FE6E9B601D0CAD730092AC01 /* GdanskBusTests */,
+				FE6E9B6B1D0CAD730092AC01 /* GdanskBusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE6E9B491D0CAD730092AC01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6E9B5B1D0CAD730092AC01 /* LaunchScreen.storyboard in Resources */,
+				FE6E9B581D0CAD730092AC01 /* Assets.xcassets in Resources */,
+				FE6E9B561D0CAD730092AC01 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE6E9B5F1D0CAD730092AC01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE6E9B6A1D0CAD730092AC01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE6E9B471D0CAD730092AC01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6E9B531D0CAD730092AC01 /* SecondViewController.swift in Sources */,
+				FE6E9B4F1D0CAD730092AC01 /* AppDelegate.swift in Sources */,
+				FE6E9B511D0CAD730092AC01 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE6E9B5D1D0CAD730092AC01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6E9B661D0CAD730092AC01 /* GdanskBusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE6E9B681D0CAD730092AC01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6E9B711D0CAD730092AC01 /* GdanskBusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE6E9B631D0CAD730092AC01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE6E9B4A1D0CAD730092AC01 /* GdanskBus */;
+			targetProxy = FE6E9B621D0CAD730092AC01 /* PBXContainerItemProxy */;
+		};
+		FE6E9B6E1D0CAD730092AC01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE6E9B4A1D0CAD730092AC01 /* GdanskBus */;
+			targetProxy = FE6E9B6D1D0CAD730092AC01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE6E9B541D0CAD730092AC01 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE6E9B551D0CAD730092AC01 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE6E9B591D0CAD730092AC01 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE6E9B5A1D0CAD730092AC01 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE6E9B731D0CAD730092AC01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE6E9B741D0CAD730092AC01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE6E9B761D0CAD730092AC01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GdanskBus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.sungwoo.GdanskBus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FE6E9B771D0CAD730092AC01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GdanskBus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.sungwoo.GdanskBus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FE6E9B791D0CAD730092AC01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GdanskBusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.sungwoo.GdanskBusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GdanskBus.app/GdanskBus";
+			};
+			name = Debug;
+		};
+		FE6E9B7A1D0CAD730092AC01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GdanskBusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.sungwoo.GdanskBusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GdanskBus.app/GdanskBus";
+			};
+			name = Release;
+		};
+		FE6E9B7C1D0CAD730092AC01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GdanskBusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.sungwoo.GdanskBusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GdanskBus;
+			};
+			name = Debug;
+		};
+		FE6E9B7D1D0CAD730092AC01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GdanskBusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.sungwoo.GdanskBusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GdanskBus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE6E9B461D0CAD730092AC01 /* Build configuration list for PBXProject "GdanskBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE6E9B731D0CAD730092AC01 /* Debug */,
+				FE6E9B741D0CAD730092AC01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE6E9B751D0CAD730092AC01 /* Build configuration list for PBXNativeTarget "GdanskBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE6E9B761D0CAD730092AC01 /* Debug */,
+				FE6E9B771D0CAD730092AC01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FE6E9B781D0CAD730092AC01 /* Build configuration list for PBXNativeTarget "GdanskBusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE6E9B791D0CAD730092AC01 /* Debug */,
+				FE6E9B7A1D0CAD730092AC01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FE6E9B7B1D0CAD730092AC01 /* Build configuration list for PBXNativeTarget "GdanskBusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE6E9B7C1D0CAD730092AC01 /* Debug */,
+				FE6E9B7D1D0CAD730092AC01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE6E9B431D0CAD730092AC01 /* Project object */;
+}
