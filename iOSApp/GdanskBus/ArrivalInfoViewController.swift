@@ -58,10 +58,10 @@ class ArrivalInfoViewController: UITableViewController {
     
     override func viewDidAppear(animated: Bool) {
         MBProgressHUD.showHUDAddedTo(self.navigationController!.view, animated: true)
-        reload()
+        reload(true)
     }
     
-    func reload() {
+    func reload(turnOffHud: Bool) {
         if let stop = stop {
             let URL = "\(AppConfig.ServerAddress)/stop/\(stop.stopCode)"
             print(URL)
@@ -72,7 +72,9 @@ class ArrivalInfoViewController: UITableViewController {
                     self.tableView.reloadData()
                 }
                 self.refreshControl?.endRefreshing()
-                MBProgressHUD.hideHUDForView(self.navigationController!.view, animated: true)
+                if turnOffHud {
+                    MBProgressHUD.hideHUDForView(self.navigationController!.view, animated: true)
+                }
             }
         }
     }
