@@ -105,7 +105,13 @@
                             <outlet property="delegate" destination="1wJ-hw-PbQ" id="Km8-rX-dC4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Stops" id="KX4-Rx-IZh"/>
+                    <navigationItem key="navigationItem" title="Stops" id="KX4-Rx-IZh">
+                        <barButtonItem key="rightBarButtonItem" image="Map-50" id="I4m-db-71e">
+                            <connections>
+                                <segue destination="vyt-hL-pPk" kind="show" id="vxj-9E-jHn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SPv-4B-lee" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -186,6 +192,27 @@
             </objects>
             <point key="canvasLocation" x="2229" y="0.0"/>
         </scene>
+        <!--Stops Map View Controller-->
+        <scene sceneID="pRh-lo-WDr">
+            <objects>
+                <viewController id="vyt-hL-pPk" customClass="StopsMapViewController" customModule="GdanskBus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gsw-iD-qih"/>
+                        <viewControllerLayoutGuide type="bottom" id="xP7-1t-P0o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LNK-NU-baY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="jgy-21-CIH" kind="show" id="wKF-KS-AXW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EBg-ab-ZxZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1505" y="738"/>
+        </scene>
         <!--Chodowieckiego-->
         <scene sceneID="CDD-DI-UnO">
             <objects>
@@ -228,4 +255,7 @@
         <image name="Marker Filled-50" width="25" height="25"/>
         <image name="Marker-50" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wKF-KS-AXW"/>
+    </inferredMetricsTieBreakers>
 </document>
