@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		78BAD0EF16FA368CF194421C /* Pods_GdanskBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE36AAE22A48E6390B886608 /* Pods_GdanskBus.framework */; };
+		E769E812F130C6C931B8F447 /* Pods-GdanskBus-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A3B5FCA04EC5CCA35DB941F /* Pods-GdanskBus-metadata.plist */; };
 		FE2527A71D0CD68600356EDF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2527A61D0CD68600356EDF /* MapViewController.swift */; };
 		FE2527AB1D0CE22D00356EDF /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2527AA1D0CE22D00356EDF /* AppConfig.swift */; };
 		FE2527AD1D0D505A00356EDF /* StopsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2527AC1D0D505A00356EDF /* StopsMapViewController.swift */; };
 		FE6E6CC71D0DE0A9008E73C1 /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E6CC61D0DE0A9008E73C1 /* BookmarksViewController.swift */; };
+		FE6E6CC91D0DF0E9008E73C1 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E6CC81D0DF0E9008E73C1 /* MoreViewController.swift */; };
 		FE6E9B4F1D0CAD730092AC01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E9B4E1D0CAD730092AC01 /* AppDelegate.swift */; };
 		FE6E9B511D0CAD730092AC01 /* StopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E9B501D0CAD730092AC01 /* StopsViewController.swift */; };
 		FE6E9B561D0CAD730092AC01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6E9B541D0CAD730092AC01 /* Main.storyboard */; };
@@ -20,6 +22,7 @@
 		FE6E9B661D0CAD730092AC01 /* GdanskBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E9B651D0CAD730092AC01 /* GdanskBusTests.swift */; };
 		FE6E9B711D0CAD730092AC01 /* GdanskBusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E9B701D0CAD730092AC01 /* GdanskBusUITests.swift */; };
 		FE6E9B7F1D0CB8640092AC01 /* ArrivalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E9B7E1D0CB8640092AC01 /* ArrivalInfoViewController.swift */; };
+		FE831C131D0DFAED008C6432 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE831C121D0DFAED008C6432 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A3B5FCA04EC5CCA35DB941F /* Pods-GdanskBus-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-GdanskBus-metadata.plist"; path = "Pods/Pods-GdanskBus-metadata.plist"; sourceTree = "<group>"; };
 		B6D69B1915275CF3DA404451 /* Pods-GdanskBus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GdanskBus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GdanskBus/Pods-GdanskBus.debug.xcconfig"; sourceTree = "<group>"; };
 		D97CE86D437E64EDE124F273 /* Pods-GdanskBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GdanskBus.release.xcconfig"; path = "Pods/Target Support Files/Pods-GdanskBus/Pods-GdanskBus.release.xcconfig"; sourceTree = "<group>"; };
 		FE2527A61D0CD68600356EDF /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		FE2527AC1D0D505A00356EDF /* StopsMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsMapViewController.swift; sourceTree = "<group>"; };
 		FE36AAE22A48E6390B886608 /* Pods_GdanskBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GdanskBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6E6CC61D0DE0A9008E73C1 /* BookmarksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
+		FE6E6CC81D0DF0E9008E73C1 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		FE6E6CCA1D0DF1AA008E73C1 /* GdanskBus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GdanskBus-Bridging-Header.h"; sourceTree = "<group>"; };
 		FE6E9B4B1D0CAD730092AC01 /* GdanskBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GdanskBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6E9B4E1D0CAD730092AC01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE6E9B501D0CAD730092AC01 /* StopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +67,7 @@
 		FE6E9B701D0CAD730092AC01 /* GdanskBusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GdanskBusUITests.swift; sourceTree = "<group>"; };
 		FE6E9B721D0CAD730092AC01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE6E9B7E1D0CB8640092AC01 /* ArrivalInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrivalInfoViewController.swift; sourceTree = "<group>"; };
+		FE831C121D0DFAED008C6432 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +109,7 @@
 			children = (
 				B6D69B1915275CF3DA404451 /* Pods-GdanskBus.debug.xcconfig */,
 				D97CE86D437E64EDE124F273 /* Pods-GdanskBus.release.xcconfig */,
+				3A3B5FCA04EC5CCA35DB941F /* Pods-GdanskBus-metadata.plist */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -131,6 +139,7 @@
 		FE6E9B4D1D0CAD730092AC01 /* GdanskBus */ = {
 			isa = PBXGroup;
 			children = (
+				FE6E6CCA1D0DF1AA008E73C1 /* GdanskBus-Bridging-Header.h */,
 				FE2527AA1D0CE22D00356EDF /* AppConfig.swift */,
 				FE6E9B4E1D0CAD730092AC01 /* AppDelegate.swift */,
 				FE6E9B501D0CAD730092AC01 /* StopsViewController.swift */,
@@ -138,6 +147,8 @@
 				FE2527A61D0CD68600356EDF /* MapViewController.swift */,
 				FE2527AC1D0D505A00356EDF /* StopsMapViewController.swift */,
 				FE6E6CC61D0DE0A9008E73C1 /* BookmarksViewController.swift */,
+				FE6E6CC81D0DF0E9008E73C1 /* MoreViewController.swift */,
+				FE831C121D0DFAED008C6432 /* AboutViewController.swift */,
 				FE6E9B541D0CAD730092AC01 /* Main.storyboard */,
 				FE6E9B571D0CAD730092AC01 /* Assets.xcassets */,
 				FE6E9B591D0CAD730092AC01 /* LaunchScreen.storyboard */,
@@ -275,6 +286,7 @@
 				FE6E9B5B1D0CAD730092AC01 /* LaunchScreen.storyboard in Resources */,
 				FE6E9B581D0CAD730092AC01 /* Assets.xcassets in Resources */,
 				FE6E9B561D0CAD730092AC01 /* Main.storyboard in Resources */,
+				E769E812F130C6C931B8F447 /* Pods-GdanskBus-metadata.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,8 +362,10 @@
 				FE6E6CC71D0DE0A9008E73C1 /* BookmarksViewController.swift in Sources */,
 				FE6E9B4F1D0CAD730092AC01 /* AppDelegate.swift in Sources */,
 				FE2527AB1D0CE22D00356EDF /* AppConfig.swift in Sources */,
+				FE831C131D0DFAED008C6432 /* AboutViewController.swift in Sources */,
 				FE6E9B511D0CAD730092AC01 /* StopsViewController.swift in Sources */,
 				FE2527AD1D0D505A00356EDF /* StopsMapViewController.swift in Sources */,
+				FE6E6CC91D0DF0E9008E73C1 /* MoreViewController.swift in Sources */,
 				FE6E9B7F1D0CB8640092AC01 /* ArrivalInfoViewController.swift in Sources */,
 				FE2527A71D0CD68600356EDF /* MapViewController.swift in Sources */,
 			);
@@ -449,6 +463,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "GdanskBus-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -487,6 +502,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "GdanskBus-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -503,6 +519,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.sungwoo.GdanskBus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GdanskBus/GdanskBus-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -518,6 +535,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.sungwoo.GdanskBus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GdanskBus/GdanskBus-Bridging-Header.h";
 			};
 			name = Release;
 		};
