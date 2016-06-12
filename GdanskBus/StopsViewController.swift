@@ -15,6 +15,7 @@ import RealmSwift
 class Stop: Object, Mappable {
     dynamic var stopCode: Int = 0
     dynamic var stopName: String = ""
+    dynamic var annotation: String = ""
     dynamic var type: Int = 0
     dynamic var lat: Double = 0.0
     dynamic var long: Double = 0.0
@@ -26,6 +27,7 @@ class Stop: Object, Mappable {
     func mapping(map: Map) {
         stopCode <- map["stopCode"]
         stopName <- map["stopName"]
+        annotation <- map["annotation"]
         type <- map["type"]
         lat <- map["lat"]
         long <- map["long"]
@@ -84,6 +86,7 @@ class StopsViewController: UITableViewController {
 class StopCell: UITableViewCell {
     @IBOutlet weak var stopName: UILabel!
     @IBOutlet weak var stopCode: UILabel!
+    @IBOutlet weak var annotationLabel: UILabel!
     @IBOutlet weak var typeBox: UIView!
     @IBOutlet weak var typeLabel: UILabel!
     
@@ -93,6 +96,7 @@ class StopCell: UITableViewCell {
         self.stop = stop
         stopName.text = stop.stopName
         stopCode.text = "\(stop.stopCode)"
+        annotationLabel.text = stop.annotation
         switch(stop.type) {
         case 1:
             typeLabel.text = "BUS"
