@@ -15,7 +15,7 @@ class ArrivalInfo: Mappable {
     var seq: Int = 0
     var stopCode: Int = 0
     var stopName: String = ""
-    var line: Int = 0
+    var line: String = ""
     var direction: String = ""
     var arrivesIn: Int?
     var arrivesAt: String?
@@ -49,6 +49,14 @@ class ArrivalInfoViewController: UITableViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+        reload()
+    }
+    
+    @IBAction func reloadTouched(sender: AnyObject) {
+        reload()
+    }
+    
+    func reload() {
         if let stop = stop {
             let URL = "http://localhost:5000/stop/\(stop.stopCode)"
             print(URL)
@@ -74,6 +82,12 @@ class ArrivalInfoViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("ArrivalInfoCell") as! ArrivalInfoCell
         cell.setArrivalInfo(arrivals[indexPath.row])
         return cell
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let destVC = segue.destinationViewController as? MapViewController {
+            destVC.stop = stop
+        }
     }
 
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		78BAD0EF16FA368CF194421C /* Pods_GdanskBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE36AAE22A48E6390B886608 /* Pods_GdanskBus.framework */; };
+		FE2527A71D0CD68600356EDF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2527A61D0CD68600356EDF /* MapViewController.swift */; };
 		FE6E9B4F1D0CAD730092AC01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E9B4E1D0CAD730092AC01 /* AppDelegate.swift */; };
 		FE6E9B511D0CAD730092AC01 /* StopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E9B501D0CAD730092AC01 /* StopsViewController.swift */; };
 		FE6E9B561D0CAD730092AC01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6E9B541D0CAD730092AC01 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		B6D69B1915275CF3DA404451 /* Pods-GdanskBus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GdanskBus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GdanskBus/Pods-GdanskBus.debug.xcconfig"; sourceTree = "<group>"; };
 		D97CE86D437E64EDE124F273 /* Pods-GdanskBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GdanskBus.release.xcconfig"; path = "Pods/Target Support Files/Pods-GdanskBus/Pods-GdanskBus.release.xcconfig"; sourceTree = "<group>"; };
+		FE2527A61D0CD68600356EDF /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FE36AAE22A48E6390B886608 /* Pods_GdanskBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GdanskBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6E9B4B1D0CAD730092AC01 /* GdanskBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GdanskBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6E9B4E1D0CAD730092AC01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				FE6E9B4E1D0CAD730092AC01 /* AppDelegate.swift */,
 				FE6E9B501D0CAD730092AC01 /* StopsViewController.swift */,
 				FE6E9B7E1D0CB8640092AC01 /* ArrivalInfoViewController.swift */,
+				FE2527A61D0CD68600356EDF /* MapViewController.swift */,
 				FE6E9B541D0CAD730092AC01 /* Main.storyboard */,
 				FE6E9B571D0CAD730092AC01 /* Assets.xcassets */,
 				FE6E9B591D0CAD730092AC01 /* LaunchScreen.storyboard */,
@@ -337,6 +340,7 @@
 				FE6E9B4F1D0CAD730092AC01 /* AppDelegate.swift in Sources */,
 				FE6E9B511D0CAD730092AC01 /* StopsViewController.swift in Sources */,
 				FE6E9B7F1D0CB8640092AC01 /* ArrivalInfoViewController.swift in Sources */,
+				FE2527A71D0CD68600356EDF /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

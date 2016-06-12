@@ -7,4 +7,5 @@ target 'GdanskBus' do
   pod 'RealmSwift'
   pod 'AlamofireObjectMapper', '~> 3.0'
   pod 'MBProgressHUD', '~> 0.9.2'
+  pod 'GoogleMaps'
 end

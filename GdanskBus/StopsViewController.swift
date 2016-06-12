@@ -15,6 +15,7 @@ import RealmSwift
 class Stop: Object, Mappable {
     dynamic var stopCode: Int = 0
     dynamic var stopName: String = ""
+    dynamic var type: Int = 0
     dynamic var lat: Double = 0.0
     dynamic var long: Double = 0.0
     
@@ -25,6 +26,7 @@ class Stop: Object, Mappable {
     func mapping(map: Map) {
         stopCode <- map["stopCode"]
         stopName <- map["stopName"]
+        type <- map["type"]
         lat <- map["lat"]
         long <- map["long"]
     }
@@ -82,6 +84,8 @@ class StopsViewController: UITableViewController {
 class StopCell: UITableViewCell {
     @IBOutlet weak var stopName: UILabel!
     @IBOutlet weak var stopCode: UILabel!
+    @IBOutlet weak var typeBox: UIView!
+    @IBOutlet weak var typeLabel: UILabel!
     
     private var stop: Stop = Stop()
     
@@ -89,6 +93,21 @@ class StopCell: UITableViewCell {
         self.stop = stop
         stopName.text = stop.stopName
         stopCode.text = "\(stop.stopCode)"
+        switch(stop.type) {
+        case 1:
+            typeLabel.text = "BUS"
+            typeBox.backgroundColor = UIColor(red: 0/255, green: 82/255, blue: 164/255, alpha: 1)
+            typeBox.layer.cornerRadius = typeBox.bounds.size.width / 2
+            break;
+        case 2:
+            typeBox.backgroundColor = UIColor(red: 185/255, green: 7/255, blue: 7/255, alpha: 1)
+            typeBox.layer.cornerRadius = 0
+            typeLabel.text = "TRAM"
+            break;
+        default:
+            typeLabel.text = "?"
+            break;
+        }
     }
     func getStop() -> Stop {
         return stop;

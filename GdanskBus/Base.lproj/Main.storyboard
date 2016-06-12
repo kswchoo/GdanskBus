@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -40,28 +41,52 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chodowieckiego" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJ5-4U-tUC" userLabel="StopName">
-                                            <rect key="frame" x="15" y="11" width="128" height="21"/>
+                                            <rect key="frame" x="56" y="4" width="128" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1001" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lx9-VZ-KsL" userLabel="StopCode">
-                                            <rect key="frame" x="538" y="14" width="29" height="16"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XQb-TY-2Jc" userLabel="TypeBox">
+                                            <rect key="frame" x="16" y="6" width="32" height="32"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BUS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gcv-Ey-XhC" userLabel="TypeLabel">
+                                                    <rect key="frame" x="2" y="10" width="28" height="14"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="gcv-Ey-XhC" firstAttribute="centerX" secondItem="XQb-TY-2Jc" secondAttribute="centerX" id="1Bm-6d-dJv"/>
+                                                <constraint firstItem="gcv-Ey-XhC" firstAttribute="leading" secondItem="XQb-TY-2Jc" secondAttribute="leading" constant="2" id="1QT-iy-CcP"/>
+                                                <constraint firstAttribute="height" constant="32" id="1tz-x9-SID"/>
+                                                <constraint firstAttribute="width" constant="32" id="bkN-EX-fG5"/>
+                                                <constraint firstAttribute="trailing" secondItem="gcv-Ey-XhC" secondAttribute="trailing" constant="2" id="lUc-zm-zla"/>
+                                                <constraint firstItem="gcv-Ey-XhC" firstAttribute="centerY" secondItem="XQb-TY-2Jc" secondAttribute="centerY" id="tgu-aJ-rJ2"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1001" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lx9-VZ-KsL" userLabel="StopCode">
+                                            <rect key="frame" x="56" y="24" width="29" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="HJ5-4U-tUC" firstAttribute="centerY" secondItem="wIb-5D-5GS" secondAttribute="centerY" id="7dD-QL-0Sl"/>
-                                        <constraint firstItem="lx9-VZ-KsL" firstAttribute="centerY" secondItem="wIb-5D-5GS" secondAttribute="centerY" id="jIR-UZ-lPS"/>
-                                        <constraint firstAttribute="trailing" secondItem="lx9-VZ-KsL" secondAttribute="trailing" id="kbc-Rz-126"/>
-                                        <constraint firstItem="HJ5-4U-tUC" firstAttribute="leading" secondItem="wIb-5D-5GS" secondAttribute="leading" constant="15" id="tfi-vb-ebx"/>
+                                        <constraint firstItem="HJ5-4U-tUC" firstAttribute="centerY" secondItem="wIb-5D-5GS" secondAttribute="centerY" constant="-7" id="7dD-QL-0Sl"/>
+                                        <constraint firstItem="lx9-VZ-KsL" firstAttribute="leading" secondItem="XQb-TY-2Jc" secondAttribute="trailing" constant="8" id="E1i-nj-i4N"/>
+                                        <constraint firstItem="XQb-TY-2Jc" firstAttribute="leading" secondItem="wIb-5D-5GS" secondAttribute="leading" constant="16" id="SGk-zh-38V"/>
+                                        <constraint firstItem="HJ5-4U-tUC" firstAttribute="leading" secondItem="XQb-TY-2Jc" secondAttribute="trailing" constant="8" id="SRn-e4-MB0"/>
+                                        <constraint firstItem="XQb-TY-2Jc" firstAttribute="centerY" secondItem="wIb-5D-5GS" secondAttribute="centerY" id="WYP-14-wYR"/>
+                                        <constraint firstItem="lx9-VZ-KsL" firstAttribute="centerY" secondItem="wIb-5D-5GS" secondAttribute="centerY" constant="10" id="jIR-UZ-lPS"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="stopCode" destination="lx9-VZ-KsL" id="F6u-zZ-Kfa"/>
                                     <outlet property="stopName" destination="HJ5-4U-tUC" id="vCT-ga-UQC"/>
+                                    <outlet property="typeBox" destination="XQb-TY-2Jc" id="sga-Aa-kqh"/>
+                                    <outlet property="typeLabel" destination="gcv-Ey-XhC" id="h8C-BZ-7tO"/>
                                     <segue destination="jgy-21-CIH" kind="show" id="EFR-TT-J7L"/>
                                 </connections>
                             </tableViewCell>
@@ -133,17 +158,49 @@
                             <outlet property="delegate" destination="jgy-21-CIH" id="lSL-x1-7fs"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Chodowieckiego" id="fIQ-aR-4Fq"/>
+                    <navigationItem key="navigationItem" title="Chodowieckiego" id="fIQ-aR-4Fq">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="refresh" id="f8E-3S-GpT">
+                                <connections>
+                                    <action selector="reloadTouched:" destination="jgy-21-CIH" id="6Qj-zr-ikQ"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="Map-50" id="xu6-kc-xB1">
+                                <connections>
+                                    <segue destination="Vbk-zH-niC" kind="show" id="sge-ua-WPJ"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8cd-H0-fbu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2229" y="0.0"/>
         </scene>
+        <!--Chodowieckiego-->
+        <scene sceneID="CDD-DI-UnO">
+            <objects>
+                <viewController id="Vbk-zH-niC" customClass="MapViewController" customModule="GdanskBus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e8O-F1-x72"/>
+                        <viewControllerLayoutGuide type="bottom" id="A8R-aG-Eeb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BWX-1e-YRI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chodowieckiego" id="nz8-LC-8Es"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KK7-GI-Jsh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2961" y="0.0"/>
+        </scene>
         <!--Stop-->
         <scene sceneID="BxK-0j-vrz">
             <objects>
                 <navigationController id="kwy-QY-TLW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Stop" id="DAL-lG-tcD"/>
+                    <tabBarItem key="tabBarItem" title="Stop" image="Marker-50" selectedImage="Marker Filled-50" id="DAL-lG-tcD"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vKC-s7-Qfz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -157,4 +214,9 @@
             <point key="canvasLocation" x="685" y="0.0"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Map-50" width="25" height="25"/>
+        <image name="Marker Filled-50" width="25" height="25"/>
+        <image name="Marker-50" width="25" height="25"/>
+    </resources>
 </document>
