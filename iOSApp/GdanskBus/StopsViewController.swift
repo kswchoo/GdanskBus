@@ -19,6 +19,7 @@ class Stop: Object, Mappable {
     dynamic var type: Int = 0
     dynamic var lat: Double = 0.0
     dynamic var long: Double = 0.0
+    dynamic var isBookmarked: Bool = false
     
     required convenience init?(_ map: Map) { self.init() }
     
@@ -48,20 +49,21 @@ class StopsViewController: UITableViewController {
             if let stops = stops {
                 try! self.realm.write {
                     for stop in stops {
-                        self.realm.add(stop, update: true)
-                        print("added stop \(stop.stopCode)")
+                        if self.realm.objectForPrimaryKey(Stop.self, key: stop.stopCode) == nil {
+                            self.realm.add(stop, update: true)
+                            print("added stop \(stop.stopCode)")
+                        }
                     }
                 }
             }
             self.tableView.reloadData()
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+    override func viewWillAppear(animated: Bool) {
+        self.tableView.reloadData()
+    }
+
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return realm.objects(Stop.self).count
     }
@@ -80,7 +82,6 @@ class StopsViewController: UITableViewController {
         }
     }
 
-
 }
 
 class StopCell: UITableViewCell {
@@ -89,6 +90,7 @@ class StopCell: UITableViewCell {
     @IBOutlet weak var annotationLabel: UILabel!
     @IBOutlet weak var typeBox: UIView!
     @IBOutlet weak var typeLabel: UILabel!
+    @IBOutlet weak var bookmarkButton: UIButton!
     
     private var stop: Stop = Stop()
     
@@ -97,6 +99,7 @@ class StopCell: UITableViewCell {
         stopName.text = stop.stopName
         stopCode.text = "\(stop.stopCode)"
         annotationLabel.text = stop.annotation
+        bookmarkButton.selected = stop.isBookmarked
         switch(stop.type) {
         case 1:
             typeLabel.text = "BUS"
@@ -113,6 +116,15 @@ class StopCell: UITableViewCell {
             break;
         }
     }
+    
+    @IBAction func bookmarkButtonTouched(sender: AnyObject) {
+        let realm = try! Realm()
+        try! realm.write {
+            stop.isBookmarked = !stop.isBookmarked
+            bookmarkButton.selected = stop.isBookmarked
+        }
+    }
+    
     func getStop() -> Stop {
         return stop;
     }

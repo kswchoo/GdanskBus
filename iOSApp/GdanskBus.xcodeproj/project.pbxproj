@@ -11,6 +11,7 @@
 		FE2527A71D0CD68600356EDF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2527A61D0CD68600356EDF /* MapViewController.swift */; };
 		FE2527AB1D0CE22D00356EDF /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2527AA1D0CE22D00356EDF /* AppConfig.swift */; };
 		FE2527AD1D0D505A00356EDF /* StopsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2527AC1D0D505A00356EDF /* StopsMapViewController.swift */; };
+		FE6E6CC71D0DE0A9008E73C1 /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E6CC61D0DE0A9008E73C1 /* BookmarksViewController.swift */; };
 		FE6E9B4F1D0CAD730092AC01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E9B4E1D0CAD730092AC01 /* AppDelegate.swift */; };
 		FE6E9B511D0CAD730092AC01 /* StopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E9B501D0CAD730092AC01 /* StopsViewController.swift */; };
 		FE6E9B561D0CAD730092AC01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6E9B541D0CAD730092AC01 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		FE2527AA1D0CE22D00356EDF /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		FE2527AC1D0D505A00356EDF /* StopsMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsMapViewController.swift; sourceTree = "<group>"; };
 		FE36AAE22A48E6390B886608 /* Pods_GdanskBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GdanskBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE6E6CC61D0DE0A9008E73C1 /* BookmarksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
 		FE6E9B4B1D0CAD730092AC01 /* GdanskBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GdanskBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6E9B4E1D0CAD730092AC01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE6E9B501D0CAD730092AC01 /* StopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				FE6E9B7E1D0CB8640092AC01 /* ArrivalInfoViewController.swift */,
 				FE2527A61D0CD68600356EDF /* MapViewController.swift */,
 				FE2527AC1D0D505A00356EDF /* StopsMapViewController.swift */,
+				FE6E6CC61D0DE0A9008E73C1 /* BookmarksViewController.swift */,
 				FE6E9B541D0CAD730092AC01 /* Main.storyboard */,
 				FE6E9B571D0CAD730092AC01 /* Assets.xcassets */,
 				FE6E9B591D0CAD730092AC01 /* LaunchScreen.storyboard */,
@@ -344,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE6E6CC71D0DE0A9008E73C1 /* BookmarksViewController.swift in Sources */,
 				FE6E9B4F1D0CAD730092AC01 /* AppDelegate.swift in Sources */,
 				FE2527AB1D0CE22D00356EDF /* AppConfig.swift in Sources */,
 				FE6E9B511D0CAD730092AC01 /* StopsViewController.swift in Sources */,
