@@ -130,15 +130,15 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Łostowice Świętokrzyska" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDj-KU-ing" userLabel="Direction">
-                                            <rect key="frame" x="52" y="11" width="192" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Łostowice Świętokrzyska" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDj-KU-ing" userLabel="Direction">
+                                            <rect key="frame" x="50" y="11" width="192" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="cDj-KU-ing" firstAttribute="leading" secondItem="AcV-ZN-TIC" secondAttribute="trailing" constant="19" id="1yp-qO-nmC"/>
+                                        <constraint firstItem="cDj-KU-ing" firstAttribute="leading" secondItem="2M5-qW-T43" secondAttribute="leading" constant="50" id="62S-bw-nYt"/>
                                         <constraint firstItem="M5U-Im-QWU" firstAttribute="centerY" secondItem="2M5-qW-T43" secondAttribute="centerY" id="CPT-ky-oYw"/>
                                         <constraint firstAttribute="trailing" secondItem="M5U-Im-QWU" secondAttribute="trailing" constant="15" id="CWn-Ah-WOI"/>
                                         <constraint firstItem="AcV-ZN-TIC" firstAttribute="leading" secondItem="2M5-qW-T43" secondAttribute="leading" constant="15" id="KYD-EZ-WzA"/>

@@ -10,6 +10,7 @@ import UIKit
 import Alamofire
 import ObjectMapper
 import AlamofireObjectMapper
+import MBProgressHUD
 
 class ArrivalInfo: Mappable {
     var seq: Int = 0
@@ -58,7 +59,8 @@ class ArrivalInfoViewController: UITableViewController {
     
     func reload() {
         if let stop = stop {
-            let URL = "http://localhost:5000/stop/\(stop.stopCode)"
+            MBProgressHUD.showHUDAddedTo(self.navigationController!.view, animated: true)
+            let URL = "\(AppConfig.ServerAddress)/stop/\(stop.stopCode)"
             print(URL)
             Alamofire.request(.GET, URL).responseArray { (response: Response<[ArrivalInfo], NSError>) in
                 if let arrivals = response.result.value {
@@ -66,6 +68,7 @@ class ArrivalInfoViewController: UITableViewController {
                     print(arrivals)
                     self.tableView.reloadData()
                 }
+                MBProgressHUD.hideHUDForView(self.navigationController!.view, animated: true)
             }
         }
     }

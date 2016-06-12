@@ -40,7 +40,7 @@ class StopsViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let URL = "http://localhost:5000/stops"
+        let URL = "\(AppConfig.ServerAddress)/stops"
         Alamofire.request(.GET, URL).responseArray { (response: Response<[Stop], NSError>) in
             let stops = response.result.value
             if let stops = stops {
