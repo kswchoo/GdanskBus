@@ -38,9 +38,16 @@ class ArrivalInfoViewController: UITableViewController {
     
     var stop: Stop?
     private var arrivals: [ArrivalInfo] = []
-
+    var timer: NSTimer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl?.addTarget(self, action: #selector(reload), forControlEvents: UIControlEvents.ValueChanged)
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: #selector(reload), userInfo: nil, repeats: true)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -50,16 +57,12 @@ class ArrivalInfoViewController: UITableViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        reload()
-    }
-    
-    @IBAction func reloadTouched(sender: AnyObject) {
+        MBProgressHUD.showHUDAddedTo(self.navigationController!.view, animated: true)
         reload()
     }
     
     func reload() {
         if let stop = stop {
-            MBProgressHUD.showHUDAddedTo(self.navigationController!.view, animated: true)
             let URL = "\(AppConfig.ServerAddress)/stop/\(stop.stopCode)"
             print(URL)
             Alamofire.request(.GET, URL).responseArray { (response: Response<[ArrivalInfo], NSError>) in
@@ -68,6 +71,7 @@ class ArrivalInfoViewController: UITableViewController {
                     print(arrivals)
                     self.tableView.reloadData()
                 }
+                self.refreshControl?.endRefreshing()
                 MBProgressHUD.hideHUDForView(self.navigationController!.view, animated: true)
             }
         }

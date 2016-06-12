@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -141,7 +140,7 @@
         <scene sceneID="i4Y-PB-aVu">
             <objects>
                 <tableViewController id="jgy-21-CIH" customClass="ArrivalInfoViewController" customModule="GdanskBus" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2C6-PL-p28">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2C6-PL-p28">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -194,18 +193,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Chodowieckiego" id="fIQ-aR-4Fq">
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="refresh" id="f8E-3S-GpT">
-                                <connections>
-                                    <action selector="reloadTouched:" destination="jgy-21-CIH" id="6Qj-zr-ikQ"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem image="Map-50" id="xu6-kc-xB1">
-                                <connections>
-                                    <segue destination="Vbk-zH-niC" kind="show" id="sge-ua-WPJ"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" image="Map-50" id="xu6-kc-xB1">
+                            <connections>
+                                <segue destination="Vbk-zH-niC" kind="show" id="sge-ua-WPJ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8cd-H0-fbu" userLabel="First Responder" sceneMemberID="firstResponder"/>
