@@ -9,5 +9,5 @@
 import Foundation
 
 class AppConfig {
-    static let ServerAddress = "http://172.16.88.17:5000"
+    static let ServerAddress = "http://awsor.sungwoo.me/GdanskBus"
 }
