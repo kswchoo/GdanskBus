@@ -105,6 +105,7 @@ class ArrivalInfoCell: UITableViewCell {
     @IBOutlet weak var lineNumberLabel: UILabel!
     @IBOutlet weak var directionLabel: UILabel!
     @IBOutlet weak var arrivesAtLabel: UILabel!
+    @IBOutlet weak var dataTypeLabel: UILabel!
     
     private var arrivalInfo: ArrivalInfo = ArrivalInfo()
     func setArrivalInfo(arrivalInfo: ArrivalInfo) {
@@ -112,10 +113,16 @@ class ArrivalInfoCell: UITableViewCell {
         directionLabel.text = arrivalInfo.direction
         if let arrivesIn = arrivalInfo.arrivesIn {
             arrivesAtLabel.text = "in \(arrivesIn) min"
-            arrivesAtLabel.textColor = UIColor(red: 30/255, green: 30/255, blue: 138/255, alpha: 1)
+            dataTypeLabel.text = "REALTIME"
+            let color = UIColor(red: 30/255, green: 30/255, blue: 138/255, alpha: 1)
+            arrivesAtLabel.textColor = color
+            dataTypeLabel.textColor = color
         } else if let arrivesAt = arrivalInfo.arrivesAt {
             arrivesAtLabel.text = "at \(arrivesAt)"
-            arrivesAtLabel.textColor = UIColor(red: 97/255, green: 97/255, blue: 97/255, alpha: 1)
+            dataTypeLabel.text = "TIMETABLE"
+            let color = UIColor(red: 128/255, green: 128/255, blue: 128/255, alpha: 1)
+            arrivesAtLabel.textColor = color
+            dataTypeLabel.textColor = color
         }
     }
 }
