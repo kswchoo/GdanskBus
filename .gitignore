@@ -1,2 +1,5 @@
 Pods
 xcuserdata
+*.pyc
+venv
+*.db
