@@ -1,0 +1,24 @@
+{
+  "intents": [
+    {
+      "intent": "ArrivalsForStopId",
+      "slots": [
+      	{
+          "name": "stopId",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },{
+      "intent": "ArrivalsForStopName",
+      "slots": [
+        {
+          "name": "stopName",
+          "type": "LIST_OF_STOPS"
+        },{
+          "name": "boundsForName",
+          "type": "LIST_OF_STOPS"
+        }
+      ]
+    }
+  ]
+}

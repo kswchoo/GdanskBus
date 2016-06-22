@@ -1,0 +1,2 @@
+ArrivalsForStopId arrivals for stop {stopId}
+ArrivalsForStopName arrivals for stop {stopName} bounds for {boundsForName}
